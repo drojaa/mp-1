@@ -229,8 +229,24 @@ hr {
         border: solid #791e49;
     }
 }
-    
+/* Styling for Reference Table */
+.ref-table {
+    width: 100%;
+    border: solid#791e49 3px;
+}
 
+.ref-table th, 
+.ref-table td {
+    border: 2px solid pink;
+    text-align: left;
+}
+
+.ref-table th {
+    background-color: #d071b2;
+}
+.ref-table td {
+    background-color: #e2b4d4;
+}
 /* Calculator styling */
 .body-calc {
     border: solid orangered;
