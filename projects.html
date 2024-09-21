@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <!-- Meta character encoding and link to external stylesheet -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Resume</title>
 </head>
 <body>
+    <!-- Header section containing the user's name and description -->
     <header>
         <h1 id="header-name">Derinell Rojas</h1>
         <p  id="header-desc">My Digital Resume </p>
     </header>
+    <!-- Navigation bar allowing users to navigate to other sections of the resume -->
     <div id="nav-main">
     <nav>
-        <ul id="nav-container">     
+        <ul id="nav-container">  
+            <!-- Links to different pages of the resume -->   
             <li class="nav-items" ><a href="/index.html">Home</a></li>
             <li class="nav-items" ><a href="/education.html">Education</a></li>
             <li class="nav-items" ><a href="/employment.html">Employment</a></li>
@@ -22,10 +26,13 @@
             <li class="nav-items"  ><a href="/references.html">References</a></li>
         </ul>
     </nav>
+       <!-- Main content section specifically for the Projects page -->
     <main>
         <div id="main-container">
+               <!-- Section header for Projects -->
             <h2 class="main-header">Projects</h2>
             <div id="main-content">
+                 <!-- Project 1: Bookify -->
                 <h3>Bookify</h4>
             <p>Initiated development of a web application to provide users a unique and personalized Spotify playlist of 10 songs perfectly tailored to mood and themes of any book</p>
             <br>
@@ -35,12 +42,14 @@
             <br>
             <p>Categorized MySQL database into 5 fields (User's Spotify ID, Book Title, Author's Name, and User's Feedback Responses from Questionnaire)</p>
             <hr><br>
+             <!-- Project 2: Calculator App -->
             <h3>Calculator App</h3>
-        
+             <!-- Calculator UI containing input fields and operation buttons -->
             <div class="name-main">
                 </div>
                 
                 <div class="body-calc">
+                    <!-- Input fields for entering numbers -->
                 <div class="first">
                     <label for="first-number"></label>
                     <input type="text" id="first-number">
@@ -48,20 +57,22 @@
                     <label for="second-number"></label>
                     <input type="text" id="second-number">
                 </div>  
+                <!-- First row of operation buttons (Addition and Subtraction) -->
                 <div class="first-row">
                     <button class="operations" onClick="addition()">+</button>  
                     <button class="operations" onClick="subtraction()">-</button>
                 </div>
+                 <!-- Second row of operation buttons (Multiplication, Division, Power) -->
                 <div class="second-row">
                     <button class="operations" onClick="multiplication()">*</button>
                     <button class="operations"onClick="division()">/</button>
                     <button class="operations" onClick="power()">^</button>
                 </div>
-                
+                <!-- Output section to display the result of the calculations -->
                 <div class="out">
                 <h3 id="output"></h3>
                 </div>
-                
+                   <!-- Clear button to reset input values -->
                 <div class="third-row">
                 <button class="operations" onClick="clear_values()">C</button>
                 </div>
@@ -70,9 +81,11 @@
     </main>
 
     </div>
+     <!-- Footer section -->
     <footer>
     <p id="footer-text">All Rights Reserved by Derinell Rojas <a href="/index.html">Credits</a> &copy</p>
     </footer>
 </body>
+<!-- External JavaScript file for calculator operations -->
 <script src="/calc.js"></script>
 </html>

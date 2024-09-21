@@ -1,18 +1,19 @@
+/* Global Styles */
 * {
-    margin: 0;
-    box-sizing: border-box;
+    margin: 0; /* Reset margin for all elements */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
 body { 
-    margin: 0% 5% 0% 5%;
+    margin: 0% 5% 0% 5%; /* Set margins for the body */
     
 }
-
+/* Main section styling */
 main {
-    height: 100vh;
+    height: 100vh; /* Make main section full viewport height */
     
 }
-
+/* Header styles */
 #header-name {
     font-family: 'Allegro', serif;
     font-size: calc(7px + 3vw);
@@ -29,11 +30,12 @@ header, footer {
     background-color: #791e49;
 }
 
+/* Paragraph styles */
 #para-one, #para-two {
     font-size: calc(2px + 1vw);
     font-family: serif;
 }
-
+/* Main header styles */
 .main-header {
     color: brown;
     max-width: max-content;
@@ -64,15 +66,16 @@ a {
     color: pink;
     text-decoration: none;
 }
-
+/* Footer styles */
 footer {
     padding: 0.5%;
     color: white;
 }
+/* Dotted line styles */
 hr {
     border: dotted #791e49;
  }
-
+/* Media queries for larger screens */
 @media screen and (min-width: 751px) {
 
    
@@ -122,7 +125,7 @@ hr {
         color: pink;
         display: block;
     }
- 
+      /* Hover effect for nav items */
     ul li:hover {
         background-color: palevioletred;
     }
@@ -143,6 +146,7 @@ hr {
 
      
     }
+     /* Styles for image and paragraph container */
     #img-para{
         margin-top: 0 ;
         display:flex;
@@ -168,7 +172,7 @@ hr {
     }
     
 }
-
+/* Media queries for smaller screens */
 @media screen and (max-width: 750px) {
     h3 {
         color: brown;
@@ -227,7 +231,7 @@ hr {
 }
     
 
-
+/* Calculator styling */
 .body-calc {
     border: solid orangered;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -256,7 +260,7 @@ hr {
     max-width: fit-content;
 
 }
-
+/* Button styles */
 .operations {
     width: 7vw;
     height: 7vh;
@@ -269,7 +273,7 @@ hr {
     box-shadow: 0px 8px 30px rgba(56, 56, 56, 0.1);
     margin: 20px auto;
     }
-
+/* Input field styles */
 .first {
     max-width: fit-content;
     margin: 1vh auto;
@@ -293,7 +297,7 @@ label {
     color: #d071b2;
 
 }
-
+/* Output styling */
 #output {
     font-size: calc(22px + 0.5vw);
 }
