@@ -2,40 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="projects.css">
-    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Resume</title>
 </head>
 <body>
-    <header class="header">
+    <header>
         <h1 id="header-name">Derinell Rojas</h1>
-        <p class="header-content">My Digital Resume </p>
+        <p  id="header-desc">My Digital Resume </p>
     </header>
-    
+    <div id="nav-main">
     <nav>
-        <ul class="nav-list">     
-            <li class="nav-items"><a href="/index.html">Home</a></li>
-            <li class="nav-items"><a href="/education.html">Education</a></li>
-            <li class="nav-items"><a href="/employment.html">Employment</a></li>
-            <li class="nav-items"><a href="/achievements.html">Achievements</a></li>
-            <li class="nav-items"><a href="/projects.html">Projects</a></li>
-            <li class="nav-items"><a href="/volunteer.html">Volunteer Work</a></li>  
+        <ul id="nav-container">     
+            <li class="nav-items" ><a href="/index.html">Home</a></li>
+            <li class="nav-items" ><a href="/education.html">Education</a></li>
+            <li class="nav-items" ><a href="/employment.html">Employment</a></li>
+            <li class="nav-items" ><a href="/achievements.html">Achievements</a></li>
+            <li class="nav-items" ><a href="/projects.html">Projects</a></li>
+            <li class="nav-items"  ><a href="/volunteer.html">Volunteer Work</a></li>  
+            <li class="nav-items"  ><a href="/references.html">References</a></li>
         </ul>
     </nav>
     <main>
-   
-    <h3 class="main-header">Projects</h4>
-    <h4>Bookify</h4>
-    <p>Initiated development of a web application to provide users a unique and personalized Spotify playlist of 10 songs perfectly tailored to mood and themes of any book</p>
-    <br>
-    <p>Integrated 2 external web API (ChatGPT and Spotify)</p>
-    <br>
-    <p>Implemented OAuth allowing users to login with existing Spotify account to save playlist</p>
-    <br>
-    <p>Categorized MySQL database into 5 fields (User's Spotify ID, Book Title, Author's Name, and User's Feedback Responses from Questionnaire)</p>
+        <div id="main-container">
+            <h2 class="main-header">Projects</h2>
+            <div id="main-content">
+                <h3>Bookify</h4>
+            <p>Initiated development of a web application to provide users a unique and personalized Spotify playlist of 10 songs perfectly tailored to mood and themes of any book</p>
+            <br>
+            <p>Integrated 2 external web API (ChatGPT and Spotify)</p>
+            <br>
+            <p>Implemented OAuth allowing users to login with existing Spotify account to save playlist</p>
+            <br>
+            <p>Categorized MySQL database into 5 fields (User's Spotify ID, Book Title, Author's Name, and User's Feedback Responses from Questionnaire)</p>
+            <hr><br>
+            <h3>Calculator App</h3>
+        
+            <div class="name-main">
+                </div>
+                
+                <div class="body-calc">
+                <div class="first">
+                    <label for="first-number"></label>
+                    <input type="text" id="first-number">
+                
+                    <label for="second-number"></label>
+                    <input type="text" id="second-number">
+                </div>  
+                <div class="first-row">
+                    <button class="operations" onClick="addition()">+</button>  
+                    <button class="operations" onClick="subtraction()">-</button>
+                </div>
+                <div class="second-row">
+                    <button class="operations" onClick="multiplication()">*</button>
+                    <button class="operations"onClick="division()">/</button>
+                    <button class="operations" onClick="power()">^</button>
+                </div>
+                
+                <div class="out">
+                <h3 id="output"></h3>
+                </div>
+                
+                <div class="third-row">
+                <button class="operations" onClick="clear_values()">C</button>
+                </div>
+                </div>
+        
     </main>
+
     </div>
-    <footer class="footer">
-    <p class="footer-text">All Rights Reserved by Derinell Rojas <a href="">Credits</a> &copy</p>
+    <footer>
+    <p id="footer-text">All Rights Reserved by Derinell Rojas <a href="/index.html">Credits</a> &copy</p>
     </footer>
 </body>
+<script src="/calc.js"></script>
 </html>
